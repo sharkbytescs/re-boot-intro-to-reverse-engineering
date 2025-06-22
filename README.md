@@ -26,6 +26,7 @@ Utilize command-line tools such as g++, objdump, strings, and GDB for compiling,
 
 
 **Course Structure** (Approx. 8 Hours)
+
 The course is divided into modules, each combining theoretical concepts with practical, hands-on lab exercises.
 
 Module 1: Introduction to Reverse Engineering & Computer Architecture
@@ -40,14 +41,14 @@ Instruction Set Architecture (ISA) & Endianness: Focusing on x86-64 and how inst
 Lab 1: Disassembling C++ Source Code to Assembly
 Objective: Translate simple C++ code to assembly to understand direct mappings.
 
-Hands-on: Write a C++ program, compile it with g++ -S to generate assembly (.s file), and analyze variable initialization (movl), arithmetic operations (imul), and function calls (call).
+**Hands-on:** Write a C++ program, compile it with g++ -S to generate assembly (.s file), and analyze variable initialization (movl), arithmetic operations (imul), and function calls (call).
 
 
-Lab 2: Exploring Control Structures in Assembly
+**Lab 2:** Exploring Control Structures in Assembly
 Objective: Identify how loops and conditional statements (if/else) are implemented in assembly.
 Hands-on: Work with a factorial C++ program, generate its assembly, and identify labels (.L), jump instructions (jmp, jle), and comparison instructions (cmp) to reconstruct program flow.
 
-Lab 3a: Reversing a Binary with GDB and objdump
+**Lab 3a:** Reversing a Binary with GDB and objdump
 Objective: Apply learned concepts to analyze an unknown binary using dynamic and static analysis tools.
 Hands-on: Use GDB to run, inspect functions, disassemble main(), and follow program execution. Then, use objdump for static disassembly and the strings command to extract printable data from the binary.
 Lab 3b: Reversing another Binary (Optional/Extended)
@@ -61,10 +62,11 @@ Security enthusiasts
 Anyone curious about how software truly works "under the hood"
 No prior extensive programming background is required! We will introduce C++ and assembly concepts from the ground up, focusing on the core principles relevant to reverse engineering. Basic familiarity with command-line interfaces (Linux terminal) will be helpful.
 
-Setup & Prerequisites
+**Setup & Prerequisites**
+
 To follow along with the labs, you will need a Linux environment (e.g., Ubuntu, Fedora, Kali Linux) preferably in a virtual machine.
 
-Required Tools:
+**Required Tools:**
 
 g++: C++ compiler (usually installed by default or via sudo apt install build-essential)
 GDB (GNU Debugger): sudo apt install gdb
